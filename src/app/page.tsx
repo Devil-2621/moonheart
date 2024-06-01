@@ -18,7 +18,7 @@ import Footer from "@/components/global/Footer";
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
 import BackToTopButton from "@/components/global/BackToTopButton";
 
-export const scrollToSection = (sectionId: string) => {
+const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
   if (element) {
     element.scrollIntoView({
@@ -307,9 +307,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-      {/* <div className="fixed bottom-8 z-0 right-8 rounded-full w-12 h-12 bg-emerald-200 animate-bounce">
-      <ArrowUpIcon className="w-100 h-100" />
-      </div> */}
       <BackToTopButton />
       <Footer />
     </main>
